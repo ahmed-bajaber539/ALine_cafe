@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Mirza:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&family=Changa:wght@200..800&family=Mirza:wght@400;500;600;700&display=swap');
+/* Start Variables */
+:root {
+    --main-color: #1A1F4C;
+    --secondary-color: #f6f6f6;
+    --font-main:'Changa' , sans-serif;
+    --font-hader:'Badeen Display' , sans-serif;
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+     body {
+        background-color: var(--secondary-color);
+        color: var(--main-color);
+    }  
+    /* end Global Rules */
+
+/* Start navbar */                              
+   .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+/* container داخل navbar */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+}
+
+    
+    /* الشعار */
+    .logo-img {
+        width: 200px;
+    }
+    
+    /* قائمة الروابط */
+    .nav-list {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .nav-list li a {
+        text-decoration: none;
+        color: var(--main-color);
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: all 0.1s ease-in;
+    }
+    .nav-list li a:hover {
+        color: var(--secondary-color);
+        background-color: var(--main-color);
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+    
+    /* زر التسجيل */
+    .btn_nav {
+        background-color: var(--main-color);
+        color: var(--secondary-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all 0.1s ease-in-out;
+    }
+    
+    .btn_nav:hover {
+        background-color: var(--secondary-color);
+        color: var(--main-color);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    }
+/* end navbar*/
+
+/* Start hero section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
