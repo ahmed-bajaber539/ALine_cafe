@@ -23,10 +23,25 @@ body {
   font-family: var(--font-main);
   background-color: var(--secondary-color);
   color: var(--main-color);
-  z-index: -1;
+  
+   position: relative;
 }
 /* end Global Rules */
-
+/* Start background section */
+.unvirsal-bakgroud{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/pic/bg2.jpg"); 
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index: -1;
+}
+/* end background section */
 /* Start navbar */
 .navbar {
   display: flex;
@@ -358,7 +373,7 @@ body {
     text-align: center;
     font-size: 40px;
     font-weight: 600;
-    color: var(--main-color);
+    color: var(--secondary-color);
 }
 /* تضبيط الكروت */
 .card_about{
@@ -387,8 +402,9 @@ body {
     transition: all 0.3s linear;
 }
 .card1-a:hover,.card2-a:hover,.card3-a:hover{
-    background-color: var(--main-color);
-    color: var(--secondary-color);
+  font-weight: 800;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
     transform: scale(1.1);
 }
@@ -403,3 +419,187 @@ body {
 }
 /* end about section */
 
+/* Start coustmar section */
+.coustmer {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 350px);
+    overflow: hidden;
+  }
+  /* ترتيب العناصر داخل القسم */
+  .coustmer-aline{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  /* العنوان الاول */
+  .coustmer-aline h3{
+      width: 100%;
+      text-align: center;
+      font-size: 60px;
+      font-weight: 600;
+      color: var(--secondary-color);
+      background-color: var(--main-color);
+      margin-bottom: 20px;
+  }
+  /* الفقرة الاولى */
+  .pargrap-coustmer{
+      width: 80%;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      color: var(--secondary-color);
+  }
+  /* تضبيط الكروت */
+  .card_coustmer{
+      width: 80%;
+      height: 300px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  /* الكروت حق العملاء */
+  .card1-c,.card2-c,.card3-c{
+      position: relative;
+      bottom: 0;
+      width: 500px;
+      padding: 20px;
+      margin: 20px;
+      color: var(--secondary-color);
+      font-size: 17px;
+      background: #1a1f4c75;
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid var(--secondary-color);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.315);
+      transition: all 0.3s linear;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  }
+  .card1-c:hover,.card2-c:hover,.card3-c:hover{
+    font-weight: 800;
+      background-color: var(--secondary-color);
+      color: var(--main-color);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+      transform: scale(1.1);
+  }
+
+  /*end coustmar section */
+  /* Start sign section */
+.sign-section{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 350px);
+    overflow: hidden;
+}
+/* ترتيب العناصر داخل القسم */
+.sign-header{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    margin-bottom: 20px;
+}
+/* ترتيب عناصر البوكس */
+.sign-sec{
+    width: 80%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+gap: 20px;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+/* البوكس حق التسجيل */
+.sign-sec input{
+    width: 20%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+}
+
+/* البوكس حق الزر */
+.sign-sec a{
+    width: 10%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    transition: all 0.3s linear;
+}
+.sign-sec a:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* end sign section */
+
+/* Start footer section */
+/* ترتيب العناصر داخل الفوتر */
+.container-footer{
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 5;
+}
+.footer-list{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-list li a{
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.1s ease-in;
+}
+.footer-list li a:hover {
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+/* end footer section */
