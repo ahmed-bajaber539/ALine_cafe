@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Mirza:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Badeen+Display&display=swap");
+/* Start Variables */
+:root {
+  --main-color: #1a1f4c;
+  --secondary-color: hsl(0, 0%, 96%);
+  --font-main: "Changa", sans-serif;
+  --font-hader: "Badeen Display", sans-serif;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-main);
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  
+   position: relative;
+}
+/* end Global Rules */
+/* Start navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
+    padding: 5px;
+  }
+  
+  /* container داخل navbar */
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+  }
+  
+  /* الشعار */
+  .logo-img {
+    width: 200px;
+  }
+  
+  /* قائمة الروابط */
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .nav-list li a {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.1s ease-in;
+  }
+  .nav-list li a:hover {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  
+  /* زر التسجيل */
+  .btn_nav {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .btn_nav:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  }
+  /* end navbar*/
+  /* Start hero section */
+.hero-product {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(".././pic/MacBook\ -\ 1.png") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
+  .contenar_hero-product{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+.header-product{
+    position: absolute;
+top: 23%;   
+ font-family: var(--font-hader);
+    font-size: 70px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.img-product-hero{
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+}
+/* end hero section */
+
+/* Start product section */
+.product {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+    display: flex;
+    transition: all 0.3s linear;
+  }
+  /* الخلفية الاولى */
+  .bg-contenar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    background-color: #0b0d22;
+    z-index: 0;
+  }
+  /* لخلفية الثانية */
+  .bg2_contenar {
+    position: absolute;
+    background-color: var(--main-color);
+    width: calc(100vw - 90px);
+    height: calc(100vh - 300px);
+    padding: 30px;
+    margin: 36px;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  
+  /* عنوان القسم */
+  .text-prod {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    padding: 20px 40px;
+    z-index: 4;
+  }
+  /* الصحن الطائر */
+  .ali-prod {
+    position: absolute;
+    width: 300px;
+    rotate: 30deg;
+    right: 0;
+    z-index: 5;
+  }
+  
+  /*  المنتجات */
+  .products {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--secondary-color);
+    width: 90%;
+    top: 9%;
+    right: 2%;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* كرت المنتج */
+  .product1,
+  .product2,
+  .product3 {
+    width: 300px;
+    height: 400px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* تأثير hover */
+  .product1:hover,
+  .product2:hover,
+  .product3:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    transform: scale(1.1);
+  }
+  
+  /* صورة المنتج داخل الكرت */
+  .product1 img,
+  .product2 img,
+  .product3 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 3;
+  }
+  .product2 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 25%;
+  }
+  
+  /* نصوص وأزرار داخل كل منتج */
+  .product1 span,
+  .product2 span,
+  .product3 span {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 5%;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .product1 span,
+  .product3 span {
+    bottom: 12%;
+  }
+  
+  .product1 a,
+  .product2 a,
+  .product3 a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(19, 21, 43);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    bottom: 5%;
+    right: 6%;
+    font-size: 20px;
+    font-weight: 600;
+    width: calc(100% - 40px);
+  }
+  .product1 a,
+  .product3 a {
+    bottom: 12%;
+  }
+  
+  .product1 a:hover,
+  .product2 a:hover,
+  .product3 a:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+  }
+  /* end product section */
+  
+  
