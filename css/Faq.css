@@ -1,0 +1,193 @@
+:root {
+  --main-color: #1a1f4c;
+  --secondary-color: hsl(0, 0%, 96%);
+  --font-main: "Changa", sans-serif;
+  --font-hader: "Badeen Display", sans-serif;
+}
+
+body
+{
+  color: #3b2f63;
+  background-color: black;
+  
+}
+
+/* Start navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+
+/* container داخل navbar */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30px;
+}
+
+/* الشعار */
+.logo-img {
+  width: 200px;
+}
+
+/* قائمة الروابط */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-list li a {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.1s ease-in;
+}
+
+.nav-list li a:hover {
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+/* زر التسجيل */
+.btn_nav {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn_nav:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* end navbar*/ 
+
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+  background: url("Media/FAQ_backgroundpic.jpg") no-repeat;
+  
+  background-size: 50%;
+  background-position:center;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: #6a7ba293 ;
+  color: rgb(168, 173, 234);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+
+.active,
+.accordion:hover {
+  background-color: #3b2f637a;
+}
+.pannel {
+  padding: 0 2rem 2.5rem 2rem;
+  color: black;
+  background-color: rgba(248, 231, 216, 0.568);
+  overflow: hidden;
+  background-color: rgba(248, 231, 216, 0.587);
+  display: none;
+}
+.pannel p {
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.faq {
+  border: 1px solid black;
+  margin: 10px 0;
+}
+.faq.active {
+  border: none;
+}
+/* Start footer section */
+/* ترتيب العناصر داخل الفوتر */
+.container-footer {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 5;
+}
+
+.footer-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-list li a {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.1s ease-in;
+}
+
+.footer-list li a:hover {
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+/* end footer section */

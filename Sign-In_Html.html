@@ -16,7 +16,7 @@
             <span class="icon">
               <ion-icon name="body"></ion-icon>
             </span>
-            <input type="text" required />
+            <input id="userName" type="text" required />
             <label>UserName</label>
           </div>
 
@@ -24,7 +24,7 @@
             <span class="icon">
               <ion-icon name="mail"></ion-icon>
             </span>
-            <input type="email" required />
+            <input id="email" type="email" required />
             <label>Email</label>
           </div>
 
@@ -32,11 +32,11 @@
             <span class="icon">
               <ion-icon name="lock-closed"></ion-icon>
             </span>
-            <input type="password" required />
+            <input id="password" type="password" required />
             <label>password</label>
           </div>
 
-          <button type="submit">Create An Account</button>
+          <button onclick="Register()" type="button">Create An Account</button>
 
           <div class="login-link">
             <p>Already have an account?<a href="./login_Html.html">Login</a></p>
@@ -44,8 +44,6 @@
         </form>
       </div>
     </section>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/auth.js"></script>
   </body>
 </html>
