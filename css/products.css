@@ -148,7 +148,7 @@ body {
 .product {
   position: relative;
   width: 100%;
-  height: calc(100vh - 200px);
+  height: 100vh ;
   overflow: hidden;
   display: flex;
   transition: all 0.3s linear;

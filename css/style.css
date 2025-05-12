@@ -181,7 +181,7 @@ body {
 .product {
   position: relative;
   width: 100%;
-  height: calc(100vh - 200px);
+  height: 100vh;
   overflow: hidden;
   display: flex;
   transition: all 0.3s linear;
@@ -346,7 +346,7 @@ body {
 .about {
   position: relative;
   width: 100%;
-  height: calc(100vh - 350px);
+  height: 100vh;
   overflow: hidden;
 }
 /* ترتيب العناصر داخل القسم */
@@ -423,7 +423,7 @@ body {
 .coustmer {
     position: relative;
     width: 100%;
-    height: calc(100vh - 350px);
+    height: 100vh;
     overflow: hidden;
   }
   /* ترتيب العناصر داخل القسم */
